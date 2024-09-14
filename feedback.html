@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <textarea name="message" required></textarea>
+        
+        <! -- Step 1: Add this line -->
+        <div class="h-captcha" data-captcha="true"></div>
+        
+        <button type="submit">Submit Form</button>
+    </form>
+    
+    <! -- Step 2: Add the script -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>

@@ -84,21 +84,19 @@ section.page-intro .left {
 
         button {
             cursor: pointer;
-            padding: 1vh 3vw;
+            padding: 10px 50px;
             border: none;
             outline: none;
-            background-color: #66FCF1;
+            background-color: #5df5eb85;
             font-family: 'Poppins';
-            font-weight: 700;
-            border-radius: 1rem;
-            box-shadow: 0 4px 8px 0 #a7cdca, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-weight: 600;
+            border-radius: 10px;
+           color: white;
+           box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
         }
-
+        
         button:hover {
-            transition: box-shadow 0.2s ease-in-out;
-            color: white;
-            background-color: #0B0C10;
-            box-shadow: 0 4px 8px 0 #66FCF1, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: rgb(78, 87, 97) 1px -1px 20px 6px;
         }
     }
 

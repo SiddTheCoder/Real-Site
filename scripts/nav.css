@@ -10,7 +10,7 @@ nav{
   position: sticky;
   z-index: 10000000;
   width: 100%;
-  background-color: aqua;
+  background-color: rgba(44, 253, 253, 0.715);
   border-radius: 0px 0px 100px 100px;
 }
 nav .wrapper{
@@ -38,7 +38,7 @@ nav .wrapper{
   list-style: none;
 }
 .nav-links li a{
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;
@@ -46,14 +46,13 @@ nav .wrapper{
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-
 .nav-links li .at:hover::before{
     position: absolute;
     content: "";
     height: 42px;
-    width: 3px;
+    width: 4px;
     border-radius: 10px;
-    background-color: yellow;
+    background-color: aqua;
 }
 .nav-links li a:hover{
   background: #3A3B3C;
@@ -64,7 +63,7 @@ nav .wrapper{
 }
 .nav-links .drop-menu{
   position: absolute;
-  background: aqua;
+  background: rgba(0, 255, 255, 0.244);
   width: 180px;
   line-height: 45px;
   top: 85px;
