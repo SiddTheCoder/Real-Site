@@ -1,0 +1,110 @@
+
+.slider-container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:100vh; /* Adjusting the height to 85% of the viewport height */
+}
+
+#slider {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height within the container */
+    overflow: hidden;
+    border: 1px solid #ddd;
+    position: relative;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
+.slide.active {
+    display: flex;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.slider-btn.prev {
+    left: 10px;
+}
+
+.slider-btn.next {
+    right: 10px;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large screens (desktops, laptops) */
+@media (min-width: 1024px) {
+    .slide {
+        font-size: 28px;
+    }
+
+    .slider-btn {
+        font-size: 18px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .slide {
+        font-size: 26px;
+    }
+
+    .slider-btn {
+        font-size: 17px;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+    .slide {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .slider-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .slide {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .slider-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
