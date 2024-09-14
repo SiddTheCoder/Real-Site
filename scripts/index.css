@@ -17,7 +17,8 @@ html {
 }
 
 body {
-    background-color: #2A2438;
+    background-color: #030303d4;
+    /* background-color: #2A2438; */
 }
 
 header nav {
@@ -104,7 +105,6 @@ nav .right-section {
 }
 
 main section.page-intro {
-    /* background-image: url("star-intro.gif"); */
     margin-top: 7vh;
     height: 90vh;
     width: 100%;
@@ -113,12 +113,26 @@ main section.page-intro {
     display: flex;
     justify-content: space-around;
     font-family: 'Poppins';
+    animation: intro 300ms ease-in-out;
 }
-
+@keyframes intro {
+    from{
+        opacity: 0.1;
+        transform: scaleX(0.5) scaleY(0.5) translateY(40px);
+    }
+    to{
+        opacity: 1;
+      transform: scaleX(1) scaleY(1) translateY(0px);
+    }
+}
 .typed-text {
     color: #66FCF1;
+    /* animation: blink 2s linear; */
 }
-
+.define-company-name{
+    font-weight: 400;
+    animation: blink 1100ms ease;
+}
 .cursor {
     background: #66FCF1;
 }
@@ -129,6 +143,7 @@ section.page-intro .left {
     h1.company-name {
         color: #66FCF1;
         font-size: 5rem;
+        animation: fade-up 1s linear;
     }
 
     .page-intro-btn {
