@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #efeeee;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.nav{
+    position: fixed;
+    width: 80%;
+    transform: translateY(40%) translateX(12%);
+    border-radius: 100px;
+    margin: auto;
+    display: flex;
+    height: 9vh;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.385) ;
+    backdrop-filter: blur(100px);
+    justify-content: space-evenly;
+    box-shadow: rgba(172, 121, 2, 0.24) 0px 1px 5px;
+    align-items: center;
+    transition: all 200ms ease-in-out;
+    z-index: 10000000000;
+}
+.nav:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.logo{
+    position: relative;
+    left: 5vw;
+}
+.nav-right{
+    position: relative;
+    right: 2vw;
+    display: flex;
+    gap: 2vw;
+    list-style-type: none;
+}
+.item-wrapper{
+    display: none;
+}
+.nav-right li{
+    cursor: pointer;
+    font-family: 'Poppins';
+    border: 0px solid white;
+    padding: 0.6vw;
+    transition: all 200ms ease;
+    font-weight: 450;
+    transform: scale(1.15);
+    border-radius: 100px;
+}
+.nav-right li:hover{
+    color: white;
+    transform: scale(1.17);
+    background-color: orange;
+}
+
+.lander{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    overflow: hidden;
+}
+.lander-container{
+    /* background-color: red; */
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lander-left{
+    flex: 50%;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section{
+    height: 100%;
+    padding: 1vw;
+    font-family: 'Poppins';
+     display: flex;
+
+    }
+    .section .left{
+        border-radius: 80px;
+  flex: 20%;
+    }
+.section .right {
+    flex: 70%;
+    .company-name{
+        transform: translateX(50%) scale(1.7) translateY(100%);
+        position: relative;
+        top: 1vw;
+        font-size: 2rem;
+        color: orange;
+    }
+    h2{
+        transform: translateX(16%) translateY(40%);
+        position: relative;
+        top: 5vw;
+    }
+    span{
+        background-color: #c7c5c511;
+        padding: 2px 5px 2px 5px;
+        border-radius: 50px;
+        color: orange;
+    }
+
+    .lander-btn{
+        position: relative;
+        top: 15vw;
+        border: none;
+        padding: 1vw;
+        border-radius: 100px;
+        margin-right: 4vw;
+        transform: translateX(40%);
+        cursor: pointer;
+        font-family: 'Poppins';
+        transition: all 200ms ease;
+        font-weight: 450;
+    }
+    .lander-btn:hover{
+        background-color: orange;
+    }
+}
+.lander-right{
+flex: 40%;
+}
+
+.lander-img{
+    filter: drop-shadow(0 0 0.75rem orange);
+    transform: translateY(-4%) translateX(5%) scale(1.01);
+}
+
+.hero1{
+    .main-title{
+        display: block;
+        position: relative;
+        width: 20%;
+        height: 50px;
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: yellow;
+        left: 39vw;
+        top: 5vh;
+        padding-top: 10px;
+        font-weight: 600;
+    }
+}

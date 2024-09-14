@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.title{
+    border-radius: 0 0 10px 10px;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    margin-left: 38vw;
+    transform: scale(1.4) translateY(10px);
+   align-items: center;
+   background-color: orange;
+   color: white;
+   height: 5vh;
+   width: 20vw;
+}
+.backer{
+    border-radius: 0 0 10px 10px;
+    transform: scale(3) translateX(10px) translateY(3px);
+    color: white;
+    border: 1px solid orange;
+    padding: 5px;
+    background-color: orange;
+}
+.project-container{
+    transform: translateY(50px);
+   padding: 20px;
+   backdrop-filter: blur(20px);
+   /* height: 90vh; */
+   width: 90%;
+   margin: auto;
+   background-color: #fff;
+   display: flex;
+   flex-wrap:wrap;
+   gap: 3vh;
+   justify-content: center;
+}
+
+.project-item{
+    border-radius: 10px;
+    position: relative;
+    min-height: 400px;
+    min-width: 300px;
+    background-color: rgb(154, 53, 53);
+    border-radius: 10px ;
+    .project-name{
+        width: 100%;
+        background-color: yellow;
+        bottom: 0;
+        position: absolute;
+        border-radius: 0px 0px 10px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vh;
+        z-index: 10;
+        opacity: 1;
+    }
+}
+.project-img{
+    height: 95%;
+    width: 100%;
+    .img-holder{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: inherit;
+    }
+ }
+.project-item::before{
+    z-index: 10000;
+    display: flex;
+    position: absolute;
+    content: "Project";
+    background-color: yellow;
+    backdrop-filter: blur(50px);
+    width: 100%;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    bottom: 40%;
+    transition: all 250ms ease;
+}
+.project-item:hover::before{
+    color: black;
+    display: flex;
+    position: absolute;
+    content: "Project";
+    background-color: yellow;
+    width: 100%;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .nav{
+    width: 30px;
+    position: fixed;
+    transform: translateX(-60%);
+  }
+  .backer{
+    padding: 15px;
+    transform: translateX(-10px) scale(1.5);
+  }
+  .title{
+    width: 30vw;
+    margin-left: 40vw;
+    transform: translateY(-1px) scale(1.4);
+  }
+}

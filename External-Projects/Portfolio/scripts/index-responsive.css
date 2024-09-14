@@ -1,0 +1,123 @@
+/* For Mobile */
+@media (max-width: 800px) {
+    .nav{
+        transform: translateY(-2px) translateX(40px);
+        justify-content: space-around;
+        .nav-left{
+            position: relative;
+            left: 4vw;
+        }
+        .nav-right{
+            display: none;
+        }
+        .item-wrapper{
+            transform: scale(1.3);
+            display: block;
+        }
+    }
+
+   .lander-container{
+    flex-direction: row;
+    .shapes{
+        display: none;
+    }
+    .lander-left .section .left{
+        display: none;
+    }
+    .lander-left .section .right{
+        width: 100vw;
+        flex-direction: column;
+        position: relative;
+        top: 36vh;
+        transform: translateX(-18%) scale(0.9);
+
+        .company-name{
+            position: absolute;
+            transform: translateY(-780%) translateX(50%) scale(1.2);
+        }
+        .lander-btn-main{
+            transform: translateX(-20%);
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+
+            .lander-btn{
+                margin-top: 5px;
+                color: white;
+                background-color: #252525;
+                font-size: 1rem;
+                padding: 5vw;
+            }
+            .lander-btn:hover{
+                background-color: orange;
+                color: white;
+            }
+        }
+    }
+
+    .lander-right{
+        position: absolute;
+        bottom: 230px;
+    }
+
+   }
+
+ 
+   .hero1{
+    transform: translateY(20px);
+   }
+    .title-main{
+        display: block;
+        font-weight: 600;
+        background-color: orange;
+        width: 20vh;
+        text-align: center;
+        transform: translateX(110px) translateY(-40px);
+        padding: 5px;
+        font-size: 1.4rem;
+        border-radius: 10px;
+    }
+ 
+   .hr1-container{
+    padding-top: 20px;
+    transform: translateY(-20px);
+    height: unset;
+    overflow: hidden;
+     max-width: 100vw;
+     box-sizing: border-box;
+     justify-content: center;
+ .title{
+    display: none;
+ }
+    .project-up{
+        flex-direction: column;
+       justify-self: center;
+        .up-item{
+            border-radius: 50px;
+            transform: translateX(40px);
+            background-color: red;
+            justify-content: center;
+            .project-img{
+                box-sizing: border-box;
+                height: 200px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .project-title{
+                border-radius: 50px;
+            }
+        }
+    }
+    .project-down{
+        display: none;
+        flex-direction: column;
+    }
+
+    .show-more-btn{
+        padding: 5px;
+        border-radius: 5px;
+        transform: translateX(120px);
+        width: 100px;
+    }
+   }
+}

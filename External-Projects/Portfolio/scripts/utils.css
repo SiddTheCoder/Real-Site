@@ -1,0 +1,37 @@
+.shapes{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    transform: translateY(50px) translateX(420px);
+    -webkit-animation: squareToCircle 5s 1s infinite alternate;
+  }
+  
+  @-webkit-keyframes squareToCircle {
+      0% {
+        border-radius: 100px 0 0 100px;
+        background: coral;
+        transform: rotate(0deg) translateY(50px) translateX(400px);
+      }
+      25% {
+        border-radius: 50% 0 0 0;
+        background: wheat;
+        transform: rotate(45deg) translateY(50px) translateX(400px);
+      }
+      50% {
+        border-radius: 50% 50% 0 0;
+        background: wheat;
+        transform: rotate(90deg) translateY(10px) translateX(400px);
+      }
+      75% {
+        border-radius: 50% 50% 50% 0;
+        background: wheat;
+        transform: rotate(135deg) translateY(-10px) translateX(100px);
+      }
+      100% {
+        border-radius: 50% 50% 50% 50%;
+        background: orange;
+        transform: rotate(180deg) translateY(-150px) translateX(00px);
+      }
+  }
+
