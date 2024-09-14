@@ -87,11 +87,11 @@ section.page-intro .left {
             padding: 10px 50px;
             border: none;
             outline: none;
-            background-color: #5df5eb85;
+            background-color: #5df5ebdd;
             font-family: 'Poppins';
             font-weight: 600;
             border-radius: 10px;
-           color: white;
+           color: black;
            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
         }
         

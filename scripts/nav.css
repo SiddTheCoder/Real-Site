@@ -38,7 +38,7 @@ nav .wrapper{
   list-style: none;
 }
 .nav-links li a{
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;
@@ -62,8 +62,9 @@ nav .wrapper{
   display: none;
 }
 .nav-links .drop-menu{
+  font-weight: 600;
   position: absolute;
-  background: rgba(0, 255, 255, 0.244);
+  background: rgb(0, 252, 252);
   width: 180px;
   line-height: 45px;
   top: 85px;
