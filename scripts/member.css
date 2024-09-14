@@ -1,0 +1,143 @@
+.container-team-members{
+    align-self: center;
+    margin: 2vh 5vw 2vh 6.6vw;
+    padding: 0 3vw;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px 0 #d2d2d2, 0 6px 10px 0 rgba(247, 247, 247, 0.568),0 4px 4px 0px #77d0eb;
+    border-radius: 4px;
+    width: 80vw;
+    height: 110vh;
+    display: flex;
+    overflow: hidden;
+    align-self: center;
+    flex-direction: column;
+    row-gap: 3vh;
+    justify-content: space-evenly;
+    
+    .box-member-row1{
+     display: flex;
+     align-self: center;
+     gap: 3vw;
+     justify-content: space-around;
+
+    }
+
+    .box-member-row2{
+     display: flex;
+     align-self: center;
+     justify-content: space-evenly;
+     gap: 3vw;
+    }
+
+    .box{
+        position: relative;
+        bottom: 1vw;
+        top: 1vw;
+        height: 46vh;
+        width: 19vw;
+        box-sizing: border-box;
+        background-color: whitesmoke;
+        box-shadow: 0 4px 8px 0 #090b0b, 0 6px 20px 0 rgba(37, 53, 193, 0.737);
+        border-radius: 4px;
+        
+        .member-profile-pic{
+            top: 0.5vw;
+            margin-bottom: 0.4;
+            position: relative;
+            box-shadow: 0 4px 8px 0 #414444, 0 6px px 0 rgba(22, 23, 27, 0.737);
+            left: 4vw;
+            /* The Below Section is every individual Section */
+            .pp-kartik{
+            height: 23vh;
+            width: 23vh;
+            border-radius: 50%;
+            background-size: cover;
+                background-image: url("assets/twitter.png");
+            }
+            .pp-siddhant{
+            height: 23vh;
+            width: 23vh;
+            border-radius: 50%;
+            background-size: cover;
+                background-image: url("assets/portfolio.png");
+            }
+            .pp-aasutosh{
+            height: 23vh;
+            width: 23vh;
+            border-radius: 50%;
+            background-size: cover;
+                background-image: url("assets/twitter.png");
+            }
+            .pp-anand{
+            height: 23vh;
+            width: 23vh;
+            border-radius: 50%;
+            background-size: cover;
+                background-image: url("assets/twitter.png");
+            }
+            .pp-tilak{
+            height: 23vh;
+            width: 23vh;
+            border-radius: 50%;
+            background-size: cover;
+                background-image: url("assets/twitter.png");
+            }
+            .pp-samir{
+            height: 23vh;
+            width: 23vh;
+            border-radius: 50%;
+            background-size: cover;
+                background-image: url("assets/twitter.png");
+            }
+
+            /* The Above Section is every individual Section */
+        }
+        .member-name{
+            margin-top: 1.2vw;
+            height: 3vw;
+            text-align: center;
+            font-size: 2vw;
+            font-weight: 700;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            color: #030303;
+
+        }
+        .member-short-details{
+            height: 4vw;
+            text-align: center;
+            font-size: 1.3vw;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            color: #030303;
+        }
+        .member-contact-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+                color: black;
+                height: 2vw;
+                font-size: 1.1vw;
+                padding: 0.4vw 1vw;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                background-color: #aff39d;
+                font-family: 'Poppins';
+                font-weight: 600;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px 0 #111212, 0 6px 2px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+        button:hover{
+            background-color: #1d4b48;
+            color: white;
+            box-shadow: 0 4px 8px 0 #66FCF1, 0 6px 2px 0 #66FCF1(0, 0, 0, 0.19);
+        }
+    }
+}

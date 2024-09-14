@@ -1,0 +1,399 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #030303;
+}
+
+nav {
+  display: flex;
+
+  .logo {
+    position: relative;
+    top: 1vh;
+    left: 2.4vw;
+  }
+}
+
+main .container {
+  display: flex;
+  width: 100%;
+  /* background-color: green; */
+  justify-content: space-around;
+
+  article {
+    display: flex;
+    /* background-color: #242020; */
+    color: white;
+    width: 50vw;
+    height: 90vh;
+
+    .typed-text {
+      color: #66fcf1;
+    }
+
+    .cursor {
+      background: #66fcf1;
+    }
+
+    section.page-intro .left {
+      padding: 20vh 4vw;
+      margin: 2vh 2vw;
+
+      h1.company-name {
+        color: #66fcf1;
+        font-size: 5rem;
+      }
+
+      h2.define-company-name {
+        padding: 0vh 0.4vw;
+      }
+
+      .page-intro-btn {
+        position: relative;
+        top: 15vh;
+        display: flex;
+        gap: 10vw;
+
+        a {
+          text-decoration: none;
+          color: #66fcf1;
+        }
+
+        button {
+          font-size: 1.2vw;
+          cursor: pointer;
+          padding: 1vh 3vw;
+          border: none;
+          outline: none;
+          background-color: #66fcf1;
+          font-family: "Poppins";
+          font-weight: 700;
+          border-radius: 1rem;
+          box-shadow: 0 4px 8px 0 #a7cdca, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        button:hover {
+          transition: box-shadow 0.2s ease-in-out;
+          color: white;
+          background-color: #0b0c10;
+          box-shadow: 0 4px 8px 0 #66fcf1, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          /* transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68); */
+        }
+      }
+    }
+  }
+
+  .right-content {
+    display: flex;
+    width: 45vw;
+    height: 90vh;
+    justify-content: space-around;
+
+    .portfolio-img {
+      width: 92vw;
+
+      img {
+        position: relative;
+        bottom: 6vh;
+        margin-bottom: 2vh;
+        height: 90vh;
+      }
+    }
+
+    aside {
+      /* background-color: rgb(31, 28, 28); */
+      width: 10vw;
+
+      ul {
+        margin-top: 20vh;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+
+        li {
+          list-style: none;
+
+          img {
+            width: 2.5vw;
+            transition: width 100ms ;
+          }
+          img:hover{
+            width: 4vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* The Below CSS Code is for the Team Member ---------------------------------------------------- */
+
+.container-team-members {
+  align-self: center;
+  margin: 2vh 5vw 8vh 8vw;
+  padding: 0 3vw;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px 0 #d2d2d2, 0 6px 10px 0 rgba(247, 247, 247, 0.568), 0 4px 4px 0px #77d0eb;
+  border-radius: 4px;
+  width: 80vw;
+  height: 130vh;
+  display: flex;
+  overflow: hidden;
+  align-self: center;
+  flex-direction: column;
+  /* row-gap: 3vh; */
+  justify-content: space-evenly;
+
+
+  span {
+    font-size: 2.2vw;
+    text-align: center;
+    position: relative;
+    width: 25vw;
+    left: 24vw;
+    cursor: cell;
+    margin-bottom: 0px;
+   border-bottom: 10px solid navy;
+   border-radius: 10px;
+
+  }
+
+  .box-member-row1 {
+    display: flex;
+    align-self: center;
+    gap: 3vw;
+    justify-content: space-evenly;
+
+  }
+
+  .box-member-row2 {
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    gap: 3vw;
+  }
+
+  .box {
+    position: relative;
+    bottom: 1vw;
+    top: 1vw;
+    height: 46vh;
+    width: 19vw;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 #090b0b, 0 6px 20px 0 rgba(37, 53, 193, 0.737);
+    border-radius: 20px;
+
+    .member-profile-pic {
+      top: 0.5vw;
+      margin-bottom: 0.4;
+      position: relative;
+      box-shadow: 0 4px 8px 0 #414444, 0 6px 8px 0 rgba(22, 23, 27, 0.737);
+      left: 4vw;
+      height: 23vh;
+      width: 23vh;
+      border-radius: 50%;
+
+      /* The Below Section is every individual Section */
+      .pp-kartik {
+        height: 23vh;
+        width: 23vh;
+        border-radius: 50%;
+        background-size: cover;
+        background-image: url("assets/twitter.png");
+      }
+
+      .pp-siddhant {
+        height: 23vh;
+        width: 23vh;
+        border-radius: 50%;
+        background-size: cover;
+        background-image: url("assets/portfolio.png");
+      }
+
+      .pp-aasutosh {
+        height: 23vh;
+        width: 23vh;
+        border-radius: 50%;
+        background-size: cover;
+        background-image: url("assets/twitter.png");
+      }
+
+      .pp-anand {
+        height: 23vh;
+        width: 23vh;
+        border-radius: 50%;
+        background-size: cover;
+        background-image: url("assets/twitter.png");
+      }
+
+      .pp-tilak {
+        height: 23vh;
+        width: 23vh;
+        border-radius: 50%;
+        background-size: cover;
+        background-image: url("assets/twitter.png");
+      }
+
+      .pp-samir {
+        height: 23vh;
+        width: 23vh;
+        border-radius: 50%;
+        background-size: cover;
+        background-image: url("assets/twitter.png");
+      }
+
+      /* The Above Section is every individual Section */
+    }
+
+    .member-name {
+      margin-top: 1.2vw;
+      height: 3vw;
+      text-align: center;
+      font-size: 1.6vw;
+      font-weight: 700;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      color: #030303;
+
+    }
+
+    .member-short-details {
+      height: 4vw;
+      text-align: center;
+      font-size: 1.3vw;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      color: #030303;
+    }
+
+    .member-contact-btn {
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      justify-content: space-around;
+
+      button {
+        color: black;
+        height: 2vw;
+        font-size: 1.1vw;
+        padding: 0.4vw 1vw;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: #aff39d;
+        font-family: 'Poppins';
+        font-weight: 600;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 #111212, 0 6px 2px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      ul {
+        width: 6vw;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        img {
+          width: 1.6vw;
+          transition: width 100ms;
+        }
+        img:hover{
+          width: 2.2vw;
+        }
+      }
+    }
+
+    button:hover {
+      background-color: #1d4b48;
+      color: white;
+      box-shadow: 0 4px 8px 0 #66FCF1, 0 6px 2px 0 #66FCF1(0, 0, 0, 0.19);
+    }
+  }
+}
+
+/* The Above CSS Code is for the Team Member */
+
+
+
+/* The Below CSS Code is for the Footer*/
+
+footer {
+  margin-top: 2vh;
+  height: 40vh;
+  width: 100%;
+  background-color: #030303;
+  color: white;
+}
+
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+
+  ul {
+      position: relative;
+      top: 5vh;
+
+  }
+
+  li {
+      color: white;
+      list-style-type: none;
+      font-family: 'Poppins';
+      font-size: 1.1vw;
+  }
+}
+
+footer .footer-raw-data {
+  width: 30%;
+  position: relative;
+  top: 1vh;
+
+  h1.company-name {
+      color: #66FCF1;
+  }
+
+  p {
+      font-family: 'Poppins';
+      font-size: 1.1vw;
+  }
+}
+
+footer .footer-copyright-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+
+  a {
+      text-decoration: none;
+      color: none;
+  }
+
+  li {
+      list-style-type: none;
+      color: white;
+  }
+}
+
+/* The Above CSS Code is for the Footer*/

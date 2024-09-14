@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins' ,sans-serif; */
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+body {
+    background-color: #2A2438;
+}
+
+header nav {
+    height: 7.5vh;
+    width: 100%;
+    background-color: black;
+    border: none;
+    border-bottom: 1rem #66FCF1;
+    color: #66FCF1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+}
+
+nav.sticky {
+    /* background-color: #0B0C10; */
+    background-color: #151515;
+    transition: background-color 1s;
+    color: white;
+    transition: color 3s;
+
+}
+
+nav .left-section {
+    display: flex;
+    gap: 2.5vw;
+    margin-left: 3rem;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: #66FCF1;
+    }
+
+    .logo {
+        margin-right: 4vw;
+    }
+    
+
+    li {
+        list-style-type: none;
+        text-align: center;
+           
+        img{
+            position: relative;
+            width: 2vw;
+        }
+    }
+    li.new-poster{
+        position: relative;
+        right: 3vw;
+        bottom: 0.5vw;
+    }
+
+    li:active,
+    li:hover {
+        text-decoration: underline;
+    }
+}
+
+nav .right-section {
+    display: flex;
+    gap: 2.5vw;
+    margin-right: 3rem;
+
+
+    a {
+        text-decoration: none;
+        color: #66FCF1;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    li:active,
+    li:hover {
+        text-decoration: underline;
+    }
+}
+
+main section.page-intro {
+    /* background-image: url("star-intro.gif"); */
+    margin-top: 7vh;
+    height: 90vh;
+    width: 100%;
+    background-color: #030303;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins';
+}
+
+.typed-text {
+    color: #66FCF1;
+}
+
+.cursor {
+    background: #66FCF1;
+}
+
+section.page-intro .left {
+    padding: 20vh 3vw;
+
+    h1.company-name {
+        color: #66FCF1;
+        font-size: 5rem;
+    }
+
+    .page-intro-btn {
+        position: relative;
+        top: 15vh;
+        display: flex;
+        gap: 10vw;
+
+        a {
+            text-decoration: none;
+            color: #66FCF1;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 1vh 3vw;
+            border: none;
+            outline: none;
+            background-color: #66FCF1;
+            font-family: 'Poppins';
+            font-weight: 700;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px 0 #a7cdca, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        button:hover {
+            transition: box-shadow 0.2s ease-in-out;
+            color: white;
+            background-color: #0B0C10;
+            box-shadow: 0 4px 8px 0 #66FCF1, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            /* transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68); */
+        }
+    }
+
+}
+
+section.page-intro .right {
+    padding: 5vh 2vw;
+}
+
+main .container {
+    margin-top: 2vh;
+    height: 50vh;
+    width: 100%;
+    background-color: #030303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .left-content {
+        color: white;
+        /* background-color: rgb(0, 128, 107); */
+        width: 30%;
+
+        img {
+            width: 65%;
+        }
+
+        h1 {
+            padding: 5vh 0vw;
+            /* margin-right: 20vw; */
+        }
+
+        p {
+            position: relative;
+            bottom: 5vh;
+            font-size: 1.2rem;
+        }
+    }
+
+    .right-content {
+        color: white;
+        /* background-color: green; */
+        width: 50%;
+        font-family: 'Poppins';
+        font-size: 1.1vw;
+
+        h1 {
+            padding: 5vh 0vw;
+            /* margin-right: 20vw; */
+        }
+
+        p {
+            position: relative;
+            bottom: 5vh;
+            font-size: 1.1vw;
+        }
+    }
+}
+
+.statistics-container {
+    margin-top: 2vh;
+    height: 30vh;
+    width: 100%;
+    background-color: #030303;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5vw; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4vh 0vw;
+    overflow: hidden;
+    align-items: center;
+    word-spacing: 3px;
+
+    .statistics-container-item {
+        font-size: 1vw;
+        color: white;
+        font-family: 'Poppins';
+        width: 32vw;
+    }
+}
+
+footer {
+    margin-top: 2vh;
+    height: 40vh;
+    width: 100%;
+    background-color: #030303;
+    color: white;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-around;
+
+    ul {
+        position: relative;
+        top: 5vh;
+
+    }
+
+    li {
+        color: white;
+        list-style-type: none;
+        font-family: 'Poppins';
+        font-size: 1.1vw;
+    }
+}
+
+footer .footer-raw-data {
+    width: 30%;
+    position: relative;
+    top: 1vh;
+
+    h1.company-name {
+        color: #66FCF1;
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-size: 1.1vw;
+    }
+}
+
+footer .footer-copyright-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+    a {
+        text-decoration: none;
+        color: none;
+    }
+
+    li {
+        list-style-type: none;
+        color: white;
+    }
+}

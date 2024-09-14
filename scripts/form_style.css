@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins' ,sans-serif; */
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+body {
+    background-color: #2A2438;
+}
+
+header nav {
+    height: 7.5vh;
+    width: 100%;
+    background-color: black;
+    border: none;
+    border-bottom: 1rem #66FCF1;
+    color: #66FCF1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+
+nav .left-section {
+    display: flex;
+    gap: 2.5vw;
+    margin-left: 3rem;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: #66FCF1;
+    }
+    .logo {
+        margin-right: 4vw;
+    }
+}
+
+
+body{
+    position: absolute;
+    align-items: center;
+    background-color: #c8e3f1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+main form{
+    /* backdrop-filter: blur(4rem); */
+    padding: 3vh 1vw;
+    margin: 5vh 33vw ;
+    height: 70vh;
+    width: 33vw;
+    background-color: rgb(127, 164, 217);
+    border-radius: 0.7rem;
+}
+form h1{
+    color: #fff;
+    text-align: center;
+    padding:1rem 3rem;
+    border-bottom: 2px solid #dadada;
+}
+form .container{
+    box-sizing: border-box;
+    margin-top: 2rem;
+    margin-left: rem;
+    padding: 1rem;
+    position: relative;
+}
+form .container .user-input input{
+   outline: none;
+   height: 6vh;
+   width: 27vw;
+   padding: 2px 35px;
+   font-size: 15px;
+   border-radius: 10px;
+   border:none;
+}
+input::text{
+    border: none;
+    outline: none;
+}
+form .container .user-input i{
+    font-size: 1.2rem;
+    position: absolute;
+    left: 20px;
+    transform: translateY(65%);
+}
+.user-input input::placeholder{
+    color: #444;
+}
+
+form .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+form .remember-forget a{
+    text-decoration: none;
+    color: rgb(56, 56, 55);
+    transition: 0.2s;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+    color: rgb(181, 200, 249);
+}
+form .btn{
+    font-weight: 600;
+    font-size: 1.2rem;
+    height: 7vh ;
+    width: 50%;
+    margin-top: 2vh;
+    margin-left: 8vw;
+    
+}
+
+form .login{
+    margin-top: 3vh;
+    text-align: center;
+}
+.login a{
+    text-decoration: none;
+}
+.login a:hover{
+    text-decoration: underline;
+    color: rgb(56, 56, 55);
+}
+
+form .signup{
+    margin-top: 3vh;
+    text-align: center;
+}
+.signup a{
+    text-decoration: none;
+}
+.signup a:hover{
+    text-decoration: underline;
+    color: rgb(56, 56, 55);
+}
