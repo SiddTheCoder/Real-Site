@@ -11,6 +11,12 @@
 }
 
 @media (max-width:940px) {
+    .hero1{
+        .row-banner{
+            display: none;
+        }
+    }
+    
     header{
         .header-item{
             position: relative;
@@ -116,6 +122,8 @@
             width: 200px;
         }
         .row-banner{
+            transform: translateY(5px);
+            z-index: 1000;
             padding: 5px;
          width: 200px;
         }
@@ -176,3 +184,15 @@
         }
     }
 }
+
+
+
+/* @media (max-width:756px){
+    .hero1{
+ background-color: yellow;
+        .row-banner{
+            display: none;
+        transform: translateY(100px);
+        }
+    }
+} */
