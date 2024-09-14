@@ -17,95 +17,20 @@ html {
 }
 
 body {
-    background-color: #030303d4;
+    background-color: #030303;
     /* background-color: #2A2438; */
 }
 
-header nav {
-    height: 7.5vh;
-    width: 100%;
-    background-color: black;
-    border: none;
-    border-bottom: 1rem #66FCF1;
-    color: #66FCF1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-    z-index: 1000;
-    position: fixed;
-    top: 0px;
-}
-
-nav.sticky {
-    /* background-color: #0B0C10; */
-    background-color: #151515;
-    transition: background-color 1s;
+.sticky {
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.29);
     color: white;
-    transition: color 3s;
-
-}
-
-nav .left-section {
-    display: flex;
-    gap: 2.5vw;
-    margin-left: 3rem;
-    align-items: center;
-
-    a {
-        text-decoration: none;
-        color: #66FCF1;
-    }
-
-    .logo {
-        margin-right: 4vw;
-    }
-    
-
-    li {
-        list-style-type: none;
-        text-align: center;
-           
-        img{
-            position: relative;
-            width: 2vw;
-        }
-    }
-    li.new-poster{
-        position: relative;
-        right: 3vw;
-        bottom: 0.5vw;
-    }
-
-    li:active,
-    li:hover {
-        text-decoration: underline;
-    }
-}
-
-nav .right-section {
-    display: flex;
-    gap: 2.5vw;
-    margin-right: 3rem;
-
-
-    a {
-        text-decoration: none;
-        color: #66FCF1;
-    }
-
-    li {
-        list-style-type: none;
-    }
-
-    li:active,
-    li:hover {
-        text-decoration: underline;
-    }
+    backdrop-filter: blur(10px);
+    transition: all 1s ease-in-out;
 }
 
 main section.page-intro {
-    margin-top: 7vh;
+    margin-top: 0vh;
     height: 90vh;
     width: 100%;
     background-color: #030303;
@@ -138,11 +63,11 @@ main section.page-intro {
 }
 
 section.page-intro .left {
+    /* flex: 30%; */
     padding: 20vh 3vw;
-
     h1.company-name {
         color: #66FCF1;
-        font-size: 5rem;
+        font-size: 5em;
         animation: fade-up 1s linear;
     }
 
@@ -174,7 +99,6 @@ section.page-intro .left {
             color: white;
             background-color: #0B0C10;
             box-shadow: 0 4px 8px 0 #66FCF1, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            /* transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68); */
         }
     }
 

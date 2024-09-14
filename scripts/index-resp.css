@@ -1,0 +1,103 @@
+@media screen and (max-width: 970px) {
+    section.page-intro .left {
+        h1.company-name{
+            font-size: 3em;
+        }
+    }
+    .page-intro{
+        height: unset;
+        display: flex;
+        flex-wrap: wrap;
+        .left{
+            transform: 
+            translateY(-100px)
+            scale(1);
+
+            .page-intro-btn{
+                position: absolute;
+                transform: 
+                translateY(60px)
+                translateX(-100px)
+                ;
+            }
+        }
+        .right{
+            order: 1;
+            transform: 
+            scale(0.7) 
+            translateY(120px)
+            translateX(290px)
+            ;
+            position: absolute;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    section.page-intro .left {
+        h1.company-name{
+            font-size: 3em;
+        }
+    }
+    .page-intro{
+        height: unset;
+        display: flex;
+        flex-wrap: wrap;
+        .left{
+            transform: 
+            translateY(-100px)
+            scale(1);
+
+            .page-intro-btn{
+                position: absolute;
+                transform: 
+                translateY(50px)
+                ;
+            }
+        }
+        .right{
+            order: 1;
+            transform: 
+            scale(0.8) 
+            translateY(80px)
+            translateX(250px)
+            scale(0.7)
+            ;
+            position: absolute;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section.page-intro .left {
+        h1.company-name{
+            font-size: 3em;
+        }
+    }
+    .page-intro{
+        height: unset;
+        display: flex;
+        flex-wrap: wrap;
+        .left{
+            transform: 
+            translateY(-100px)
+            ;
+            .page-intro-btn{
+                position: absolute;
+                transform: 
+                translateY(280px)
+                translateX(90px)
+                ;
+            }
+        }
+        .right{
+            order: 1;
+            transform: 
+            scale(0.6) 
+            translateY(170px)
+            translateX(-20px)
+            ;
+            position: absolute;
+        }
+    }
+}

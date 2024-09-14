@@ -10,6 +10,8 @@
     <!-- CSS Libraries ------------- -->
     <link rel="stylesheet" href="scripts/index.css">
     <link rel="stylesheet" href="scripts/animation.css">
+    <link rel="stylesheet" href="scripts/nav.css">
+    <link rel="stylesheet" href="scripts/index-resp.css">
     <!-- CSS Libraries ------------- -->
     
     <link rel="javascript" href="globe-design.tsx">
@@ -25,37 +27,78 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left-section">
-                <div class="logo"><a href="#"><img src="assets/logo-with-nobg.png" alt="LOGO" height="45vh"></a></div>
-                <a href="#">
-                    <li>About</li>
-                </a>
-                <a href="#">
-                    <li>Notes</li>
-                </a>
-                <a href="course.html">
-                    <li>Courses</li>
-                </a>
-                <a href="blog.html"> 
-                    <li>Blogs&nbsp;</li>
-                </a>
-                <li class="new-poster"><img src="assets/new.png" alt=""></li>
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="https://www.siddhantyadav.com.np">SiddTheCoder<span
+                style="position: absolute; top: -8px; font-size: 20px;"><sup>Parth</sup></span></a>
             </div>
-            <div class="right-section">
-                <a href="login.html">
-                    <li>Login</li>
-                </a>
-                <a href="signin.html">
-                    <li>Signup</li>
-                </a>
-                <a href="portfolio.html">
-                    <li>Developer</li>
-                </a>
-            </div>
-        </nav>
-    </header>
+
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i
+                class="fas fa-times"></i></label>
+            <li><a href="External-Projects/Portfolio/index.html">Developer</a></li>
+            <!-- <li><a href="External-Projects/Gyankoop-Website/index.html">Recent Project GY</a></li> -->
+            <li>
+              <a href="#" class="desktop-item">Starred Projects</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Starred Projetcs</label>
+              <ul class="drop-menu">
+                <li><a href="External-Projects/Gyankoop-Website/index.html">Gyankoop Website</a></li>
+                <li><a href="#">Password Generator</a></li>
+                <li><a href="#">Number Guesser</a></li>
+                <!-- <li><a href="#"></a></li> -->
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Mega Menu</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="assets/Open-FIeld.jpg" alt>
+                  </div>
+                  <div class="row">
+                    <span style="color: white; font-size: 1.1rem;">Design
+                      Services</span>
+                    <ul class="mega-links">
+                      <li class="at"><a href="#">Graphics</a></li>
+                      <li class="at"><a href="#">Vectors</a></li>
+                      <li class="at"><a href="#">Business cards</a></li>
+                      <li class="at"><a href="#">Custom logo</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <span style="color: white; font-size: 1.1rem;">Email
+                      Services</span>
+                    <ul class="mega-links">
+                      <li class="at"><a href="#">Personal Email</a></li>
+                      <li class="at"><a href="#">Business Email</a></li>
+                      <li class="at"><a href="#">Mobile Email</a></li>
+                      <li class="at"><a href="#">Web Marketing</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <span style="color: white; font-size: 1.1rem;">Security
+                      services</span>
+                    <ul class="mega-links">
+                      <li class="at"><a href="#">Site Seal</a></li>
+                      <li class="at"><a href="#">VPS Hosting</a></li>
+                      <li class="at"><a href="#">Privacy Seal</a></li>
+                      <li class="at"><a href="#">Website design</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i
+              class="fas fa-bars"></i></label>
+        </div>
+      </nav>
     <!-- The Script for sticky Nav BAr -->
     <script>
         window.addEventListener("scroll", function () {
@@ -63,6 +106,7 @@
             nav.classList.toggle("sticky", window.scrollY > 0);
         })
     </script>
+  <!-- The Script for sticky Nav BAr -->
 
     <main>
 
@@ -84,7 +128,7 @@
         </section>
 
     </main>
-
+<hr>
     <footer>
         <!-- <video src="videos/footer-video.mp4" width="100%"  autoplay muted loop true></video>  -->
         <div class="footer-container">
