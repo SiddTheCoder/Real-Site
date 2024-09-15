@@ -7,6 +7,7 @@
 html {
     overflow: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -17,7 +18,7 @@ html {
 }
 
 body {
-    background-color: #030303;
+    background-color: #0d100b;
     /* background-color: #2A2438; */
 }
 
@@ -33,7 +34,8 @@ main section.page-intro {
     margin-top: 0vh;
     height: 90vh;
     width: 100%;
-    background-color: #030303;
+    /* background-color: #030303; */
+    background-color: #0d100b;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -53,10 +55,12 @@ main section.page-intro {
 .typed-text {
     color: #66FCF1;
     /* animation: blink 2s linear; */
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, 2px 2px 0px rgba(206,89,55,0);
 }
 .define-company-name{
     font-weight: 400;
     animation: blink 1100ms ease;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 2px 2px 13px #CE5937;
 }
 .cursor {
     background: #66FCF1;
@@ -104,80 +108,24 @@ section.page-intro .left {
 
 section.page-intro .right {
     padding: 5vh 2vw;
+    animation: intro-rotate 900ms ease-in-out;
+}
+@keyframes intro-rotate {
+    from{transform: rotate(270deg) scale(0.3);}
+    to{transform: rotate(0deg) scale(1);}
 }
 
-main .container {
-    margin-top: 2vh;
-    height: 50vh;
-    width: 100%;
-    background-color: #030303;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .left-content {
-        color: white;
-        /* background-color: rgb(0, 128, 107); */
-        width: 30%;
-
-        img {
-            width: 65%;
-        }
-
-        h1 {
-            padding: 5vh 0vw;
-            /* margin-right: 20vw; */
-        }
-
-        p {
-            position: relative;
-            bottom: 5vh;
-            font-size: 1.2rem;
-        }
-    }
-
-    .right-content {
-        color: white;
-        /* background-color: green; */
-        width: 50%;
-        font-family: 'Poppins';
-        font-size: 1.1vw;
-
-        h1 {
-            padding: 5vh 0vw;
-            /* margin-right: 20vw; */
-        }
-
-        p {
-            position: relative;
-            bottom: 5vh;
-            font-size: 1.1vw;
-        }
-    }
-}
-
-.statistics-container {
-    margin-top: 2vh;
-    height: 30vh;
-    width: 100%;
-    background-color: #030303;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5vw; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 4vh 0vw;
+main section.secnd-page{
+    background: #ffff;
+    height: 100vh;
     overflow: hidden;
-    align-items: center;
-    word-spacing: 3px;
-
-    .statistics-container-item {
-        font-size: 1vw;
-        color: white;
-        font-family: 'Poppins';
-        width: 32vw;
-    }
+    display: flex;
+}
+.secnd-page .left{
+    background-color: green;
+}
+.secnd-page .right{
+    background: #be5656;
 }
 
 footer {

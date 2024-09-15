@@ -1,5 +1,4 @@
 
-
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -34,7 +33,7 @@ body {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #ffffffc7;
     padding: 2rem;
     border-radius: 8px;
     width: 100%;
@@ -57,7 +56,15 @@ body {
 }
 
 .modal-header h2 {
+    padding: 0px 10px;
+    border-radius: 10px;
+    color: aqua;
+    color: aqua;
+    letter-spacing: 3px;
+background: #23232354;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
     margin: 0;
+    font-weight: 300;
 }
 
 .close {
@@ -68,7 +75,7 @@ body {
 }
 
 .close:hover, .close:focus {
-    color: #000;
+    color: aqua;
     text-decoration: none;
     cursor: pointer;
 }
