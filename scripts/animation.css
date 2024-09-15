@@ -24,3 +24,19 @@
         transform: rotateX(0deg);
     }
 }
+
+@keyframes bg-changer {
+    from{
+        /* opacity: 0.5; */
+        /* background: linear-gradient(135deg, #fc6262, #ffd86f); */
+        background: linear-gradient(135deg, #2470a0, #ffb6d1);
+
+    }
+    to{
+        /* opacity: 0.5; */
+        /* background: linear-gradient(135deg, #ffd86f, #fc6262); */
+        background: linear-gradient(135deg, #ffb6d1, #2470a0);
+
+    }
+    
+}

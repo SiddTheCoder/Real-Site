@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            animation: g 1000ms linear infinite;
+            /* background-color: plum; */
+        }
+        @keyframes g {
+            from{
+                opacity: 0.5;
+                background: linear-gradient(135deg, #fc6262, #ffd86f);
+            }
+            to{
+                opacity: 0.5;
+                background: linear-gradient(135deg, #ffd86f, #fc6262);
+
+            }
+            
+        }
+        .container{
+            border: 10px solid red;
+            min-height: 80vh;
+            width: 80%;
+            background-color: white;
+            display: grid;
+            row-gap: 4px;
+            column-gap: 10px;
+            grid-template-areas: 
+            "header header header header"
+            "nav nav nav nav"
+            "aside main main main"
+            "aside main main main"
+            "aside footer footer footer"
+            ;
+        }
+        header{grid-area: header; background-color: #f29292;}
+        nav{grid-area: nav; background-color: yellow;}
+        aside{grid-area: aside; background-color: blue;}
+        main{grid-area: main; background-color: pink;}
+        footer{grid-area: footer; background-color: goldenrod;}
+
+        @media screen and (max-width: 900px) {
+            .container{
+                grid-template-areas: 
+            "header header header header"
+            "nav nav nav nav"
+            "main main main main"
+            "main main main main"
+            "footer footer footer footer"
+            ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header></header>
+        <nav></nav>
+        <aside></aside>
+        <main></main>
+        <footer></footer>
+    </div>
+</body>
+</html>
