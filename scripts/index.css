@@ -35,7 +35,8 @@ main section.page-intro {
     height: 90vh;
     width: 100%;
     /* background-color: #030303; */
-    background-color: #0d100b;
+    /* background-color: #0d100b; */
+    background-color: #181111c5;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -55,12 +56,12 @@ main section.page-intro {
 .typed-text {
     color: #66FCF1;
     /* animation: blink 2s linear; */
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, 2px 2px 0px rgba(206,89,55,0);
+    /* text-shadow: #FFF 0px 0px 5px , 2px 2px 0px rgba(206,89,55,0); */
 }
 .define-company-name{
     font-weight: 400;
     animation: blink 1100ms ease;
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 2px 2px 13px #CE5937;
+    /* text-shadow: 0 0 4px #49ff18, 0 0 6px #49FF18, 2px 2px 13px #CE5937; */
 }
 .cursor {
     background: #66FCF1;
@@ -79,7 +80,7 @@ section.page-intro .left {
         position: relative;
         top: 15vh;
         display: flex;
-        gap: 10vw;
+        gap: 10vh;
 
         a {
             text-decoration: none;
