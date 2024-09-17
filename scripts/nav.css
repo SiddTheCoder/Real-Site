@@ -10,7 +10,6 @@ nav{
   position: sticky;
   z-index: 10000000;
   width: 100%;
-  background-color: rgba(44, 253, 253, 0.715);
   border-radius: 0px 0px 100px 100px;
 }
 nav .wrapper{
@@ -25,7 +24,7 @@ nav .wrapper{
   justify-content: space-between;
 }
 .wrapper .logo a{
-  color: black;
+  color: aqua;
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
@@ -38,7 +37,7 @@ nav .wrapper{
   list-style: none;
 }
 .nav-links li a{
-  color: black;
+  color: rgba(255, 255, 255, 0.755);
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;
@@ -55,16 +54,17 @@ nav .wrapper{
     background-color: aqua;
 }
 .nav-links li a:hover{
-  background: #3A3B3C;
+   background: linear-gradient(to right, rgba(49, 48, 48, 0.673), rgba(243, 167, 25, 0.618));;
   color: white;
 }
 .nav-links .mobile-item{
   display: none;
 }
 .nav-links .drop-menu{
+  color: white;
   font-weight: 600;
   position: absolute;
-  background: rgb(0, 252, 252);
+  background: white;
   width: 180px;
   line-height: 45px;
   top: 85px;

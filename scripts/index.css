@@ -18,20 +18,24 @@ html {
 }
 
 body {
-    background-color: #0d100b;
+    /* background-color: #0d100b; */
     /* background-color: #2A2438; */
+    background-image: radial-gradient(circle at center center, transparent 0%,rgb(33,33,33) 99%),repeating-linear-gradient(0deg, rgba(0,9,255, 0.2) 0px, rgba(0,9,255, 0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(0,9,255, 0.2) 0px, rgba(0,9,255, 0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 }
 
 .sticky {
     border-radius: 0px 0px 0px 0px;
     background-color: rgba(255, 255, 255, 0.29);
-    color: white;
-    backdrop-filter: blur(10px);
+    color: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(px);
     transition: all 1s ease-in-out;
 }
 
 main section.page-intro {
-    margin-top: 0vh;
+
+    background-image: radial-gradient(circle at center center, transparent 0%,rgb(33,33,33) 99%),repeating-linear-gradient(0deg, rgba(0,9,255, 0.2) 0px, rgba(0,9,255, 0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(0,9,255, 0.2) 0px, rgba(0,9,255, 0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+
+    margin-top: vh;
     height: 90vh;
     width: 100%;
     /* background-color: #030303; */
@@ -69,7 +73,7 @@ main section.page-intro {
 
 section.page-intro .left {
     /* flex: 30%; */
-    padding: 20vh 3vw;
+    padding: 13vh 3vw 0vh 3vw;
     h1.company-name {
         color: #66FCF1;
         font-size: 5em;
@@ -108,7 +112,7 @@ section.page-intro .left {
 }
 
 section.page-intro .right {
-    padding: 5vh 2vw;
+    padding: 2vh 2vw;
     animation: intro-rotate 900ms ease-in-out;
 }
 @keyframes intro-rotate {

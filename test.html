@@ -1,71 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            margin: 0;
+        * {
             padding: 0;
-            animation: g 1000ms linear infinite;
-            /* background-color: plum; */
+            margin: 0;
+            box-sizing: border-box;
         }
-        @keyframes g {
-            from{
-                opacity: 0.5;
-                background: linear-gradient(135deg, #fc6262, #ffd86f);
-            }
-            to{
-                opacity: 0.5;
-                background: linear-gradient(135deg, #ffd86f, #fc6262);
 
-            }
-            
+        .brand-slider .wrapper {
+            width: 90%;
+            /* max-width: 1536px; */
+            margin-inline: auto;
+            position: relative;
+            height: 100px;
+            margin-top: 5rem;
+            overflow: hidden; 
+            mask-image: linear-gradient(
+                to right,
+                rgba(0,0,0,0),
+                rgba(0,0,0,1) 20%,
+                rgba(0,0,0,1) 80%,  
+                rgba(0,0,0,0)
+            );
         }
-        .container{
-            border: 10px solid red;
-            min-height: 80vh;
-            width: 80%;
-            background-color: white;
-            display: grid;
-            row-gap: 4px;
-            column-gap: 10px;
-            grid-template-areas: 
-            "header header header header"
-            "nav nav nav nav"
-            "aside main main main"
-            "aside main main main"
-            "aside footer footer footer"
-            ;
-        }
-        header{grid-area: header; background-color: #f29292;}
-        nav{grid-area: nav; background-color: yellow;}
-        aside{grid-area: aside; background-color: blue;}
-        main{grid-area: main; background-color: pink;}
-        footer{grid-area: footer; background-color: goldenrod;}
 
-        @media screen and (max-width: 900px) {
-            .container{
-                grid-template-areas: 
-            "header header header header"
-            "nav nav nav nav"
-            "main main main main"
-            "main main main main"
-            "footer footer footer footer"
-            ;
+        @keyframes scrollLeft {
+            to {
+                left: -200px;
             }
+        }
+
+        .itemX {
+            height: 100px;
+            width: 180px;
+            background-color: red;
+            border-radius: 6px;
+            position: absolute;
+            left: max(calc(200px * 8), 100%);
+            animation-name: scrollLeft;
+            animation-duration: 30s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .itemX1{
+            animation-delay: calc(30s / 8 * (8 - 1) * -1); 
+        }
+        .itemX2{
+            animation-delay: calc(30s / 8 * (8 - 2) * -1);
+        }
+        .itemX3{
+            animation-delay: calc(30s / 8 * (8 - 3) * -1);
+        }
+        .itemX4{
+            animation-delay: calc(30s / 8 * (8 - 4) * -1);
+        }
+        .itemX5{
+            animation-delay: calc(30s / 8 * (8 - 5) * -1);
+        }
+        .itemX6{
+            animation-delay: calc(30s / 8 * (8 - 6) * -1);
+        }
+        .itemX7{
+            animation-delay: calc(30s / 8 * (8 - 7) * -1);
+        }
+        .itemX8{
+            animation-delay: calc(30s / 8 * (8 -  8) * -1);
         }
     </style>
 </head>
-<body>
-    <div class="container">
 
-        <header></header>
-        <nav></nav>
-        <aside></aside>
-        <main></main>
-        <footer></footer>
+<body>
+    <div class="brand-slider">
+        <div class="wrapper">
+            <div class="itemX itemX1"></div>
+            <div class="itemX itemX2"></div>
+            <div class="itemX itemX3"></div>
+            <div class="itemX itemX4"></div>
+            <div class="itemX itemX5"></div>
+            <div class="itemX itemX6"></div>
+            <div class="itemX itemX7"></div>
+            <div class="itemX itemX8"></div>
+        </div>
     </div>
+
 </body>
+
 </html>

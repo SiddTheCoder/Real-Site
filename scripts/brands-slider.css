@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.brand-slider{
+    transform: scale(0.8);
+    margin-top: -12rem;
+    height: unset;
+
+    .sub-title{
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+.brand-slider .wrapper {
+    width: 90%;
+    /* max-width: 1536px; */
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    overflow: hidden; 
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,  
+        rgba(0,0,0,0)
+    );
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+.itemX {
+    height: 100px;
+    width: 180px;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.itemX1{
+    animation-delay: calc(30s / 8 * (8 - 1) * -1); 
+}
+.itemX2{
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+.itemX3{
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+.itemX4{
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+.itemX5{
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+.itemX6{
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+.itemX7{
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+.itemX8{
+    animation-delay: calc(30s / 8 * (8 -  8) * -1);
+}
