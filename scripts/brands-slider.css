@@ -5,16 +5,28 @@
 }
 .brand-slider{
     transform: scale(0.8);
-    margin-top: -12rem;
+    margin-top: -13rem;
     height: unset;
 
     .sub-title{
+        backdrop-filter: blur(10px);
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .Rater-btn{
+        width: 100%;
+        cursor:text;
+        background-image: radial-gradient(circle at center center, transparent 0%,rgb(33,33,33) 99%),repeating-linear-gradient(0deg, rgba(0,9,255, 0.2) 0px, rgba(0,9,255, 0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(0,9,255, 0.2) 0px, rgba(0,9,255, 0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+        backdrop-filter: blur(10px);
         color: white;
         text-align: center;
         font-size: 1.5em;
     }
 }
 .brand-slider .wrapper {
+    backdrop-filter: blur(1px);
     width: 90%;
     /* max-width: 1536px; */
     margin-inline: auto;
@@ -39,6 +51,9 @@
 }
 
 .itemX {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     height: 100px;
     width: 180px;
     border-radius: 6px;
