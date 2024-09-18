@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins' ,sans-serif; */
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+body {
+    /* background-color: #0d100b; */
+    /* background-color: #2A2438; */
+    background-image: radial-gradient(circle at center center, transparent 0%,rgb(33,33,33) 99%),repeating-linear-gradient(0deg, rgba(0,9,255, 0.2) 0px, rgba(0,9,255, 0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(0,9,255, 0.2) 0px, rgba(0,9,255, 0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+}
+
+.sticky {
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.29);
+    color: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(px);
+    transition: all 1s ease-in-out;
+}
+
+main section.page-intro {
+
+    background-image: radial-gradient(circle at center center, transparent 0%,rgb(33,33,33) 99%),repeating-linear-gradient(0deg, rgba(0,9,255, 0.2) 0px, rgba(0,9,255, 0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(0,9,255, 0.2) 0px, rgba(0,9,255, 0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+
+    margin-top: vh;
+    height: 90vh;
+    width: 100%;
+    /* background-color: #030303; */
+    /* background-color: #0d100b; */
+    background-color: #181111c5;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins';
+    animation: intro 300ms ease-in-out;
+}
+@keyframes intro {
+    from{
+        opacity: 0.1;
+        transform: scaleX(0.5) scaleY(0.5) translateY(40px);
+    }
+    to{
+        opacity: 1;
+      transform: scaleX(1) scaleY(1) translateY(0px);
+    }
+}
+.typed-text {
+    color: #66FCF1;
+    /* animation: blink 2s linear; */
+    /* text-shadow: #FFF 0px 0px 5px , 2px 2px 0px rgba(206,89,55,0); */
+}
+.define-company-name{
+    font-weight: 400;
+    animation: blink 1100ms ease;
+    /* text-shadow: 0 0 4px #49ff18, 0 0 6px #49FF18, 2px 2px 13px #CE5937; */
+}
+.cursor {
+    background: #66FCF1;
+}
+
+section.page-intro .left {
+    /* flex: 30%; */
+    padding: 13vh 3vw 0vh 3vw;
+    h1.company-name {
+        color: #66FCF1;
+        font-size: 5em;
+        animation: fade-up 1s linear;
+    }
+
+    .page-intro-btn {
+        position: relative;
+        top: 15vh;
+        display: flex;
+        gap: 10vh;
+
+        a {
+            text-decoration: none;
+            color: #66FCF1;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px 50px;
+            border: none;
+            outline: none;
+            background-color: #5df5ebdd;
+            font-family: 'Poppins';
+            font-weight: 600;
+            border-radius: 10px;
+           color: black;
+           box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        
+        button:hover {
+            box-shadow: rgb(78, 87, 97) 1px -1px 20px 6px;
+        }
+    }
+
+}
+
+section.page-intro .right {
+    padding: 2vh 2vw;
+    animation: intro-rotate 900ms ease-in-out;
+}
+@keyframes intro-rotate {
+    from{transform: rotate(180deg) scale(0.3);}
+    to{transform: rotate(0deg) scale(1);}
+}
+
+main section.secnd-page{
+    height: 100vh;
+    /* overflow: hidden; */
+    animation: bg-changer 5000ms ease-in-out infinite;
+    /* transition: all 4s ease; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.sub-heading{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    backdrop-filter: blur(10px);
+    padding: 10vw;
+    border-radius: 100px;
+    padding-top: 100px;
+  height: 19vh;
+ background-color: #ffffff56;
+ font-size: 4rem;
+}
+footer {
+    margin-top: 2vh;
+    height: 40vh;
+    width: 100%;
+    background-color: #030303;
+    color: white;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-around;
+
+    ul {
+        position: relative;
+        top: 5vh;
+
+    }
+
+    li {
+        color: white;
+        list-style-type: none;
+        font-family: 'Poppins';
+        font-size: 1.1vw;
+    }
+}
+
+footer .footer-raw-data {
+    width: 30%;
+    position: relative;
+    top: 1vh;
+
+    h1.company-name {
+        color: #66FCF1;
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-size: 1.1vw;
+    }
+}
+
+footer .footer-copyright-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+    a {
+        text-decoration: none;
+        color: none;
+    }
+
+    li {
+        list-style-type: none;
+        color: white;
+    }
+}

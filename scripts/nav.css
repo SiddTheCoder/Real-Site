@@ -106,6 +106,60 @@ nav .wrapper{
   justify-content: space-between;
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
+.default-theme{
+  
+}
+
+
+.nav-links li:hover .mega-box-theme{
+  transition: all 0.3s ease;
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Below code is for theme selector */
+.mega-box-theme {
+  visibility: hidden;
+  .theme-content{
+    left: 65vw;
+  position: absolute;
+  background: #24252663;
+  backdrop-filter: blur(1px);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: space-between;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+}
+.theme-content .theme-mode{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 3px;
+
+  .mode{
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    text-align: left;
+    background: linear-gradient(to left, rgba(49, 48, 48, 0.673), rgba(243, 167, 25, 0.618));;
+    color: white;
+    transition: background-color 6s linear;
+  }
+  .mode:hover{
+    background: linear-gradient(to right, rgba(49, 48, 48, 0.673), rgba(243, 167, 25, 0.618));;
+    color: white;
+  }
+}
+.span-theme{
+  transform: translateX(0px);
+}
+.span-theme:hover{
+  transform: translateX(10px);
+}
 .mega-box .content .row{
   width: calc(25% - 30px);
   line-height: 45px;

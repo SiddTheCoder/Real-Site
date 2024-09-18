@@ -1,0 +1,34 @@
+.sweetNavyPurple-mode{
+
+    .page-intro{
+        background-image: radial-gradient(circle at center center, transparent 0%,rgb(41,3,59) 99%),repeating-linear-gradient(0deg, rgba(0,217,255, 0.2) 0px, rgba(0,217,255, 0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(0,217,255, 0.2) 0px, rgba(0,217,255, 0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(41,3,59),rgb(41,3,59));
+    }
+    nav{
+       background-color: rgba(128, 0, 128, 0.412);
+       border-radius: 0px;
+       backdrop-filter: blur(4px);
+    }
+    .brand-slider{
+        backdrop-filter: blur(1px);
+        .sub-title{
+            backdrop-filter: blur(10px);
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .Rater-btn{
+            width: 100%;
+            cursor:text;
+            background-image: radial-gradient(circle at center center, transparent 0%,rgb(41,3,59) 99%),repeating-linear-gradient(0deg, rgba(0,217,255, 0.2) 0px, rgba(0,217,255, 0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(0,217,255, 0.2) 0px, rgba(0,217,255, 0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(41,3,59),rgb(41,3,59));
+            backdrop-filter: blur(5px);
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    }
+
+      .mega-box .content{
+        background: rgb(66, 0, 66);
+        box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+      }
+}

@@ -1,0 +1,31 @@
+.light-mode{
+    transition: all 3s ease;
+    
+    nav{
+        background-color: #57565650;
+        border-radius: 0px;
+        backdrop-filter: blur(4px);
+    }
+
+    .page-intro{
+        background-image: radial-gradient(circle at center center, transparent 0%,rgb(65,65,65) 99%),repeating-linear-gradient(0deg, rgba(0,217,255, 0.2) 0px, rgba(0,217,255, 0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(0,217,255, 0.2) 0px, rgba(0,217,255, 0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(65,65,65),rgb(65,65,65));
+    }
+    .brand-slider{
+        backdrop-filter: blur(1px);
+        .sub-title{
+            backdrop-filter: blur(10px);
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .Rater-btn{
+            width: 100%;
+            cursor:text;
+            background-image: radial-gradient(circle at center center, transparent 0%,rgb(65,65,65) 99%),repeating-linear-gradient(0deg, rgba(0,217,255, 0.2) 0px, rgba(0,217,255, 0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(0,217,255, 0.2) 0px, rgba(0,217,255, 0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(65,65,65),rgb(65,65,65));
+            backdrop-filter: blur(5px);
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    }
+}

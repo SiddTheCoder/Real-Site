@@ -15,6 +15,14 @@
   <link rel="stylesheet" href="scripts/feedback.css">
   <link rel="stylesheet" href="scripts/brands-slider.css">
   <link rel="stylesheet" href="scripts/theme-selector.css">
+
+  <!-- Theme CSS -->
+   <link rel="stylesheet" href="scripts/theme/default-mode.css">
+   <link rel="stylesheet" href="scripts/theme/sweetNavyPurple.css">
+   <link rel="stylesheet" href="scripts/theme/light-mode.css">
+   <link rel="stylesheet" href="scripts/theme/greenHacker-mode.css">
+  <!-- Theme CSS -->
+
   <!-- CSS Libraries ------------- -->
 
   <link rel="javascript" href="globe-design.tsx">
@@ -32,8 +40,9 @@
 <body>
   <nav>
     <div class="wrapper">
-      <div class="logo"><a href="https://www.siddhantyadav.com.np">SiddTheCoder<span
-            style="position: absolute; top: -8px; font-size: 20px;"><sup>Parth</sup></span></a>
+      <div class="logo"><a href="https://www.siddhantyadav.com.np">
+        <img src="assets/Logo/siddycoddy.png" alt="" width="50px" style="transform: translateY(15px);">
+      </a>
       </div>
 
       <input type="radio" name="slider" id="menu-btn">
@@ -42,50 +51,6 @@
         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
         <li><a href="External-Projects/Portfolio/index.html">Developer
           </a></li>
-     <li>
-          <a href="#" class="desktop-item">Showcase</a>
-          <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item">Showcase</label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-                <img src="assets/Logo/code-processing-no-bg.gif" alt>
-              </div>
-              <div class="row">
-                <span style="color: white; font-size: 1.1rem;">
-                  <i class="fa-solid fa-star" style="color: yellow;"></i>
-                  &nbsp;Starred projects</span>
-                <ul class="mega-links">
-                  <li class="at"><a href="blog.html">Facebook Clone</a></li>
-                  <li class="at"><a href="External-Projects/Gyankoop-Website/index.html">Gyankoop
-                      Website</a></li>
-                  <li class="at"><a href="#">Password Generator</a></li>
-                  <li class="at"><a href="#">Number Guesser</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <span style="color: white; font-size: 1.1rem;">
-                  <i class="fa-regular fa-user" style="color: aqua;"></i>&nbsp;Contacts</span>
-                <ul class="mega-links">
-                  <li class="at"><a href="#">Personal Email</a></li>
-                  <li class="at"><a href="#">Business Email</a></li>
-                  <li class="at"><a href="#">Mobile Email</a></li>
-                  <li class="at"><a href="#">Web Marketing</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <span style="color: white; font-size: 1.1rem;">
-                  <i class="fa-brands fa-periscope" style="color: aqua;"></i>&nbsp;E-services</span>
-                <ul class="mega-links">
-                  <li class="at"><a href="#">Site Seal</a></li>
-                  <li class="at"><a href="#">VPS Hosting</a></li>
-                  <li class="at"><a href="#">Privacy Seal</a></li>
-                  <li class="at"><a href="#">Website design</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>   
         <li>
           <a href="#" class="desktop-item">Showcase</a>
           <input type="checkbox" id="showMega">
@@ -130,6 +95,43 @@
             </div>
           </div>
         </li>
+
+        <li>
+          <a href="#" class="desktop-item default-theme">Theme</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Theme</label>
+          <div class="mega-box-theme">
+            <div class="theme-content">
+              <!-- The below code is for mode selector -->
+              <div class="theme-mode">
+                <button class="mode" onclick="defaultMode()"><i class="fa-solid fa-sun"></i>&nbsp;&nbsp;<span>Default (SiddyCoddy Theme)</span></button>
+                <button class="mode" onclick="sweetNavyPurple()"><i class="fa-solid fa-moon"></i>&nbsp;&nbsp;<span>Sweet Navy Purple</span></button>
+                <button class="mode" onclick="greenHacker()"><i class="fa-solid fa-moon"></i>&nbsp;&nbsp;<span>Hacker Monto</span></button>
+                <button class="mode" onclick="lightMode()"><i class="fa-solid fa-moon"></i>&nbsp;&nbsp;<span>Light Dark</span></button>
+              </div>
+              <script>
+                function defaultMode() {
+                  let element = document.body;
+                  element.className = "default-mode";
+                }
+                function lightMode() {
+                  let element = document.body;
+                  element.className = "light-mode";
+                }
+                function sweetNavyPurple() {
+                  let element = document.body;
+                  element.className = "sweetNavyPurple-mode";
+                }
+                function greenHacker() {
+                  let element = document.body;
+                  element.className = "greenHacker-mode";
+                }
+              </script>
+              <!-- The above script is for mode selector -->
+            </div>
+          </div>
+        </li>
+
         <li>
           <!-- The Button that triggers the modal -->
           <button id="openModalBtn">Feedback</button>
