@@ -45,16 +45,16 @@ main section.page-intro {
     display: flex;
     justify-content: space-around;
     font-family: 'Poppins';
-    animation: intro 300ms ease-in-out;
+    /* animation: intro 300ms ease-in-out; */
 }
 @keyframes intro {
     from{
         opacity: 0.1;
-        transform: scaleX(0.5) scaleY(0.5) translateY(40px);
+        transform: scaleX(1) scaleY(0);
     }
     to{
         opacity: 1;
-      transform: scaleX(1) scaleY(1) translateY(0px);
+      transform: scaleX(1) scaleY(1);
     }
 }
 .typed-text {
@@ -116,7 +116,7 @@ section.page-intro .right {
     animation: intro-rotate 900ms ease-in-out;
 }
 @keyframes intro-rotate {
-    from{transform: rotate(180deg) scale(0.3);}
+    from{transform: rotate(50deg) scale(0.3);}
     to{transform: rotate(0deg) scale(1);}
 }
 
