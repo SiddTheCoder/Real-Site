@@ -1,55 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=|, initial-scale=1.0">
-  <title>Document</title>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Nav</title>
     <style>
-   .dark-mode{
-    background-color: black;
-    color: white;
-   }
-   .light-mode{
-    background-color: #fff;
-    color: black;
-   }
-   .sweet-purple{
-    background-color: purple;
-    color: green;
-   }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .nav-btn {
+            padding: 10px;
+            font-size: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-wrapper {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        #nav-items {
+            display: flex;
+            list-style: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #nav-items li {
+            min-width: 150px;
+            text-align: center;
+            padding: 15px;
+            background-color: #f4f4f4;
+            margin: 0 5px;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+
+        #nav-items li:hover {
+            background-color: #ddd;
+        }
     </style>
 </head>
 <body>
-      <!-- The below code is for mode selector -->
-      <div class="theme-mode">
-        <button class="mode" onclick="lightMode()"><i class="fa-solid fa-sun"></i></button>
-        <button class="mode" onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
-        <button class="mode" onclick="sweetPurple()"><i class="fa-solid fa-moon"></i></button>
-    </div>
-    <script>
-      function lightMode() {
-          let element = document.body;
-          element.className = "dark-mode";
-      }
-        function darkMode() {
-            let element = document.body;
-            element.className = "light-mode";
-        }
-        function sweetPurple() {
-            let element = document.body;
-            element.className = "sweet-purple";
-        }
-    </script>
-    <!-- The above script is for mode selector -->
 
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste delectus ad enim beatae recusandae et, rem quasi maxime voluptatibus ipsam mollitia nulla ut, quibusdam dolorum facere ipsum ducimus, incidunt ullam accusantium! Perferendis rerum voluptates asperiores repellat ut, excepturi in eaque illo sapiente pariatur temporibus doloremque, debitis, eligendi accusantium. Nesciunt, quam?
+    <div class="nav-container">
+        <button id="left-btn" class="nav-btn">&lt;</button>
+        <div class="nav-wrapper">
+            <ul id="nav-items">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+                <li>Item 7</li>
+                <li>Item 8</li>
+                <li>Item 9</li>
+                <li>Item 10</li>
+            </ul>
+        </div>
+        <button id="right-btn" class="nav-btn">&gt;</button>
+    </div>
+
+    <script>
+        const navItems = document.getElementById('nav-items');
+        let scrollAmount = 0;
+
+        document.getElementById('right-btn').addEventListener('click', function() {
+            const maxScroll = navItems.scrollWidth - navItems.clientWidth;
+            if (scrollAmount < maxScroll) {
+                scrollAmount += 150; // Scroll by 150px
+                navItems.style.transform = `translateX(-${scrollAmount}px)`;
+            }
+        });
+
+        document.getElementById('left-btn').addEventListener('click', function() {
+            if (scrollAmount > 0) {
+                scrollAmount -= 150; // Scroll by 150px
+                navItems.style.transform = `translateX(-${scrollAmount}px)`;
+            }
+        });
+    </script>
+
 </body>
 </html>

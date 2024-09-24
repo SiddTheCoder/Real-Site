@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.scroll-bar{
+    max-height: 85vh;
+    overflow: scroll;
+    overflow-x:hidden ;
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #eceef2;
+        border-radius: 180px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #9b9b9b;
+        border-radius: 180px;
+    }
+
+}
+
+body {
+    font-family: 'Poppins';
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'nav nav nav nav'
+    'sidebar cont cont aside'
+    'sidebar cont cont aside'
+    'footer footer footer footer'
+    ;
+}
+
+
+header{
+    font-family: 'Poppins';
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color: olive;
+   align-items: center;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 50px;
+    }
+}
+nav{
+    min-height: 7vh;
+    grid-area: nav;
+    background-color: gray;
+}
+
+
+
+.nav-container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-btn {
+    padding: 10px;
+    opacity: 0.5;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-wrapper {
+    flex: 1;
+    overflow: hidden;
+}
+
+#nav-items {
+    display: flex;
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+#nav-items li {
+    font-size: 15px;
+    min-width: 150px;
+    text-align: center;
+    padding: 5px;
+    background-color: #f4f4f4;
+    margin: 0 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+#nav-items li:hover {
+    background-color: #ddd;
+}
+
+
+
+.sidebar{
+    min-width: 200px;
+    padding: 20px;
+    grid-area: sidebar;
+    background-color: #8f0000;
+}
+.content{
+    min-width: 500px;
+    padding: 20px;
+    grid-area: cont;
+    background-color: pink;
+}
+aside{
+    padding: 20px;
+    background-color: #1ba338;
+    grid-area: aside;
+    max-height: 85vh;
+    overflow: hidden;
+}
+footer{
+    background-color: blue;
+    padding: 20px;
+    grid-area: footer;
+}
+
+
+/* Extra small devices (phones, less than 576px) */
+@media only screen and (max-width: 575.98px) {
+    body {
+        grid-template-areas: 
+        'header header header header'
+        'nav nav nav nav'
+        'cont cont cont cont'
+        'cont cont cont cont'
+        'footer footer footer footer'
+        ;
+    }
+    .sidebar,aside{
+        display: none;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 576px and up) */
+  @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        grid-template-areas: 
+        'header header header header'
+        'nav nav nav nav'
+        'sidebar cont cont cont'
+        'sidebar cont cont cont'
+        'footer footer footer footer'
+        ;
+    }
+    aside{
+        display: none;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        grid-template-areas: 
+        'header header header header'
+        'nav nav nav nav'
+        'sidebar cont cont cont'
+        'sidebar cont cont cont'
+        'footer footer footer footer'
+        ;
+    }
+    aside{
+        display: none;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    /* CSS for desktops */
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    /* CSS for large desktops */
+  }
+  
+  /* Ultra large devices (extra wide screens, 1600px and up) */
+  @media only screen and (min-width: 1600px) {
+    /* CSS for ultra large screens */
+  }
+  
