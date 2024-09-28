@@ -78,6 +78,9 @@ section.page-intro .left {
         color: #66FCF1;
         font-size: 5em;
         animation: fade-up 1s linear;
+        /* font-family: 'VT323'; */
+        font-family: 'Kanit';
+        letter-spacing: 5px;
     }
 
     .page-intro-btn {
@@ -110,10 +113,14 @@ section.page-intro .left {
     }
 
 }
-
+@keyframes glower {
+    from{filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.629)); }
+    to{filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.477)); }
+}
 section.page-intro .right {
     padding: 2vh 2vw;
     animation: intro-rotate 900ms ease-in-out;
+    animation: glower 3s linear infinite;
 }
 @keyframes intro-rotate {
     from{transform: rotate(50deg) scale(0.3);}
