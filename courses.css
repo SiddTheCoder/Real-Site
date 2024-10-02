@@ -119,7 +119,7 @@ nav{
 
 .content{
     min-height: 80vh;
-    min-width: 1000px;
+    min-width: 60vw;
     padding: 5px;
     grid-area: cont;
     background-color: #FAF7F0;
@@ -210,7 +210,7 @@ chapter ul {
 }
 
 chapter li {
-    width: 300px;
+    width: 100%;
     padding: 10px;
     background-color: #f0f0f0;
     margin-bottom: 5px;
@@ -266,6 +266,27 @@ chapter .minimize-btn {
 
 
 
+@media only screen and (max-width: 500.98px) {
+    body {
+        grid-template-areas: 
+        'header header header header'
+        'nav nav nav nav'
+        'cont cont cont cont'
+        'cont cont cont cont'
+        'footer footer footer footer'
+        ;
+    }
+    .sidebar,aside{
+        display: none;
+    }
+    .content{
+        padding: 20px;
+    }
+    .introduction-to-html{
+        padding: 20px;
+        font-size: 10px;
+    }
+}
 
 /* Extra small devices (phones, less than 576px) */
 @media only screen and (max-width: 575.98px) {
@@ -281,6 +302,9 @@ chapter .minimize-btn {
     .sidebar,aside{
         display: none;
     }
+    .content{
+        padding: 20px;
+    }
   }
   
   /* Small devices (portrait tablets and large phones, 576px and up) */
@@ -289,12 +313,12 @@ chapter .minimize-btn {
         grid-template-areas: 
         'header header header header'
         'nav nav nav nav'
-        'sidebar cont cont cont'
-        'sidebar cont cont cont'
+        'cont cont cont cont'
+        'cont cont cont cont'
         'footer footer footer footer'
         ;
     }
-    aside{
+    aside,.sidebar{
         display: none;
     }
   }
@@ -305,10 +329,16 @@ chapter .minimize-btn {
         grid-template-areas: 
         'header header header header'
         'nav nav nav nav'
-        'sidebar cont cont cont'
-        'sidebar cont cont cont'
+        'cont cont cont cont'
+        'cont cont cont cont'
         'footer footer footer footer'
         ;
+    }
+    .sidebar{
+        display: none;
+    }
+    .content{
+        padding: 10px;
     }
     aside{
         display: none;
@@ -318,6 +348,21 @@ chapter .minimize-btn {
   /* Large devices (desktops, 992px and up) */
   @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
     /* CSS for desktops */
+    body {
+        grid-template-areas: 
+        'header header header header'
+        'nav nav nav nav'
+        'sidebar cont cont cont'
+        'sidebar cont cont cont'
+        'footer footer footer footer'
+        ;
+    }
+    .content{
+        width: 73vw;
+    }
+    aside{
+        display: none;
+    }
   }
   
   /* Extra large devices (large desktops, 1200px and up) */
