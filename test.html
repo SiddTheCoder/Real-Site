@@ -1,112 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
-  </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+        .introduction-to-html {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
 
-:root {
-  --white: #ffffff;
-  --light-orange: #ffbf00;
-  --orange: #ff930e;
-}
+        .introduction-to-html h2 {
+            color: #333;
+        }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: var(--white);
-}
+        .introduction-to-html h3 {
+            color: #666;
+            margin-top: 20px;
+        }
 
-#card {
-  width: 400px;
-  height: 400px;
-  background: linear-gradient(
-    to bottom right,
-    var(--light-orange),
-    var(--orange)
-  );
-  border-radius: 1rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
-}
+        .introduction-to-html p {
+            margin-bottom: 15px;
+        }
 
-#gloss {
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  will-change: opacity;
-  transition: 0.2s opacity ease-out;
-}
-  </style>
-  <body>
-    <div id="card">
-      <div id="gloss">
-      </div>
-    </div>
-    <script>
-        const card = document.getElementById("card");
-const gloss = document.getElementById("gloss");
+        .introduction-to-html ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
 
-card.addEventListener("mousemove", (e) => {
-  const pointerX = e.clientX; // x-coordinate of mouse cursor relative to the left edge of the browser;
-  const pointerY = e.clientY; // y-coordinate of mouse cursor relative to the top edge of the browser;
+        .introduction-to-html pre {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap; /* allows wrapping of long lines */
+        }
 
-  const cardRect = card.getBoundingClientRect(); // it returns a DOMRect object representing the size of an element and its position relative to the viewport;
+        .introduction-to-html code {
+            background-color: #eaeaea;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
 
-  const halfWidth = cardRect.width / 2;
-  const halfHeight = cardRect.height / 2;
+<div class="introduction-to-html">
+    <h2>Introduction to HTML</h2>
+    <p>HTML, or HyperText Markup Language, is the standard markup language used to create web pages. It forms the backbone of web content, allowing developers to structure text, images, links, and other media on a webpage. HTML is both a straightforward and powerful language that defines the content and layout of a webpage.</p>
+    
+    <h3>Key Features of HTML:</h3>
+    <ul>
+        <li><strong>Elements and Tags:</strong> HTML is composed of elements, which are represented by tags. For example, <code>&lt;p&gt;</code> for paragraphs, <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for headings, and <code>&lt;div&gt;</code> for division sections.</li>
+        <li><strong>Attributes:</strong> HTML elements can have attributes that provide additional information. For instance, the <code>href</code> attribute in <code>&lt;a&gt;</code> tags defines the URL of a link, while the <code>src</code> attribute in <code>&lt;img&gt;</code> tags specifies the image source.</li>
+        <li><strong>Structure:</strong> HTML documents have a defined structure, including a <code>&lt;head&gt;</code> section for meta-information like the document title, and a <code>&lt;body&gt;</code> section for the actual content displayed on the webpage.</li>
+        <li><strong>Semantic HTML:</strong> Semantic elements such as <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code> help convey meaning and structure, improving accessibility and search engine optimization (SEO).</li>
+    </ul>
 
-  const cardCenterX = cardRect.left + halfWidth; // x-coordinate of the card center relative to the left edge;
-  const cardCenterY = cardRect.top + halfHeight; // y-coordinate of the card center relative to the left edge;
+    <h3>Why Learn HTML?</h3>
+    <p>Understanding HTML is essential for web development. It serves as the foundation for learning other web technologies like CSS (Cascading Style Sheets) for styling and JavaScript for interactivity, allowing developers to create visually appealing and interactive websites. Additionally, HTML knowledge can help with:</p>
+    <ul>
+        <li><strong>Improving SEO:</strong> A well-structured HTML document can enhance a website's visibility in search engines.</li>
+        <li><strong>Building Web Applications:</strong> Many web applications use HTML as the core structure, making it crucial for full-stack development.</li>
+        <li><strong>Debugging:</strong> Understanding HTML can help you identify and fix issues in web applications more effectively.</li>
+    </ul>
 
-  const deltaX = pointerX - cardCenterX; // x value relative to the card center;
-  const deltaY = pointerY - cardCenterY; // y value relative to the card center;
+    <h3>Basic HTML Document Structure</h3>
+    <p>Every HTML document begins with a declaration that specifies the version of HTML being used. Here's a simple structure:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;My First Web Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        &lt;p&gt;Welcome to my first webpage!&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
-  const distanceToCenter = Math.sqrt(Math.pow(deltaX, 2) + Math.pow(deltaY, 2)); // from the point to the center of the card;
+    <h3>Conclusion</h3>
+    <p>Learning HTML is the first step towards becoming a web developer. It is a valuable skill that opens the door to creating modern websites and applications. Start exploring HTML today, and build your way to more advanced web technologies!</p>
+</div>
 
-  const maxDistance = Math.max(halfWidth, halfHeight); // the maximum distance from the corner to the center of the card;
-
-  const degree = (distanceToCenter * 10) / maxDistance;
-  const rx = deltaY / halfHeight;
-  const ry = deltaX / halfWidth;
-
-  card.style.transform = `perspective(400px) rotate3d(${-rx}, ${ry}, 0, ${degree}deg)`;
-
-  gloss.style.transform = `translate(${-ry * 100}%, ${-rx * 100}%) scale(2.4)`;
-  gloss.style.opacity = (distanceToCenter * 0.6) / maxDistance;
-});
-
-card.addEventListener("mouseleave", () => {
-  card.style = null;
-  gloss.style.opacity = 0;
-});
-    </script>
-  </body>
+</body>
 </html>
