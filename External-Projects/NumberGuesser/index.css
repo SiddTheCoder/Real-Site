@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+body{
+    background-image: radial-gradient(circle at center center, transparent 0%, rgb(0, 0, 0) 99%), repeating-linear-gradient(0deg, rgba(0, 154, 255, 0.2) 0px, rgba(0, 154, 255, 0.2) 1px, transparent 1px, transparent 6px), repeating-linear-gradient(90deg, rgba(0, 154, 255, 0.2) 0px, rgba(0, 154, 255, 0.2) 1px, transparent 1px, transparent 6px), linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+}
+.main-container {
+    height: 100vh;
+    width: 100vw;
+}
+.title {
+    position: relative;
+    top: 2vh;
+    display: flex;
+    justify-content: center;
+    color: orange;
+    font-size: 70px;
+    font-family: 'VT323';
+}
+.middleWare {
+    position: relative;
+    top: 5vh;
+    height: 70vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.MWitem {
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 9px 0px;
+    backdrop-filter: blur(1px);
+    height: 110%;
+    min-width: 350px;
+    background-color: rgba(195, 194, 194, 0.145);
+}
+.MWitem:nth-child(2) {
+    min-width: 600px;
+}
+.MWtitle {
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+}
+#historyBoard{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#historyBoard li{
+    text-align: center;
+    border-radius: 20px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px 4px 0px 5px;
+    list-style: none;
+    color: aqua;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.305);
+}
+#gameBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#gameBoard h3 {
+    margin-top: 5vh;
+    font-weight: 500;
+    font-size: 25px;
+    color: aqua;
+}
+#gameBoard form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#gameBoard form input {
+    margin-top: 5vh;
+    outline: none;
+    padding: 10px 10px;
+    height: 50px;
+    min-width: 300px;
+    background: rgba(9, 72, 72, 0.668);
+    transition: all 2s ease;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2px solid orange;
+}
+#gameBoard form input:hover {
+    border-radius: 15px;
+    background: aqua;
+}
+#gameBoard form input[type="text"] {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(140, 91, 0);
+}
+
+#gameBoard .message{
+    max-width: 250px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff00;
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    position: relative;
+    left: 30px;
+    top: 50px;
+    color: orange;
+    font-size: 1.2vw;
+}
+
+#gameBoard .move-shower{
+    text-align: center;
+    color: orangered;
+    background-color: #ffffff0e;
+    padding: 1px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    background-color: #ffffff27;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#scoreBoard {
+    display: flex;
+    flex-direction: column;
+}
+#scoreBoard li{
+    border-radius: 20px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 4px 0px 5px;
+    list-style: none;
+    color: aqua;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.305);
+}

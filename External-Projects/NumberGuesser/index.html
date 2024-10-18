@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Number Guesser - STC 🙌</title>
+
+        <!-- fonts ----------------- -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+            rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <!-- fonts ----------------- -->
+ 
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="title">Welcome To Number Guesser App</div>
+            <div class="middleWare">
+
+                <div id="historyBoard" class="MWitem">
+                    <div class="MWtitle">History Board</div>
+                </div>
+
+                <div id="gameBoard" class="MWitem">
+                    <div class="MWtitle">Game Board</div>
+                    <h3>Guess The Number</h3>
+                    <form>
+                        <label for="userGuess">
+                            <input type="text" name="userGuess" id="userGuess">
+                        </label>
+                        <div class="move-shower"></div>
+                        <a href="index.html" id="sub-btn">Restart</a>
+                        <div class="message"></div>
+                    </form>
+                </div>
+
+                <div id="scoreBoard" class="MWitem">
+                    <div class="MWtitle">Score Board</div>
+                    <div id="score-shower"></div>
+                </div>
+
+            </div>
+        </div>
+
+       <script src="app.js"></script>
+    </body>
+</html>
